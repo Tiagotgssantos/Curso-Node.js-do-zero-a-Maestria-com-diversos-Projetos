@@ -1,15 +1,15 @@
-const verificadorPrimo = require('./verificadorPrimo');
+console.log(process.argv);
 
-const numero = 17;
+const args = process.argv.slice(2);
 
-try{
-    const ehPrimo = verificadorPrimo.verificadorPrimo(numero);
+console.log(args);
 
-    if(ehPrimo){
-        console.log(`${numero} é um número Primo.`)
-    }else{
-        console.log(`${numero} não é um número Primo`)
-    }
-} catch (error){
-    console.error("Ocorreu um erro:", error.message);
-}
+const nome = args[0].split('=')[1];
+
+console.log(nome);
+
+const idade = args[1].split('=')[1];
+
+console.log(idade);
+
+console.log(`O nome dele é ${nome} e ele tem ${idade} anos`);
