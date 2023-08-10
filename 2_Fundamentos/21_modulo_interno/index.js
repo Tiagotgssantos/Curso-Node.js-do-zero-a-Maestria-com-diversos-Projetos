@@ -1,5 +1,6 @@
 const meuModulo = require('./meu_modulo');
 // importantando o modulo
+
 const soma = meuModulo.soma;
 /*colocando a função importada dentro de uma variavel
 para em seguida poder usala. 
